@@ -1,5 +1,13 @@
 // Convert the following promise code into async/await code
 
-getMostFollowers("taco", "smokey", "thumbelina").then(function (data) {
-    console.log(data);
+// Promise
+
+getMostFollowers("taco", "smokey", "thumbelina").then((data) => {
+  console.log(data);
 });
+
+// Async/Await
+
+const data = await getMostFollowers("taco", "smokey", "thumbelina");
+
+console.log(data);
